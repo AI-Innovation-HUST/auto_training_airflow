@@ -23,10 +23,7 @@ class Inference():
         df = ta.add_all_ta_features(df, "o", "h", "l", "c", "vol", fillna=True)
         scaler = MinMaxScaler() # test method
         df['prediction_h'] = np.ones((df.shape[0],1))
-        df['prediction_l'] = np.ones((df.shape[0],1))
-
-        
-                                        
+        df['prediction_l'] = np.ones((df.shape[0],1))                               
         df_norm = pd.DataFrame(scaler.fit_transform(df), columns=df.columns)
         df_norm.dropna(inplace=True)
         HIGH = []

@@ -1,7 +1,5 @@
 import datetime
 from datetime import timedelta 
-import csv
-import json
 import torch
 import pandas as pd
 import ta
@@ -234,7 +232,7 @@ process_data_task = PythonOperator(
 )  
 
 training_model = PythonOperator(
-    task_id = 'training model',
+    task_id = 'training_model',
     python_callable = training_transformer,
     provide_context = True,
     dag =dag
