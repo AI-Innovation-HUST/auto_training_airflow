@@ -213,7 +213,7 @@ dag = DAG(
     'crawl_data_okx',  
     default_args=default_args,  
     description='Crawl data and store as DataFrame',  
-    schedule_interval='@monthly',  
+    schedule_interval='@weekly',  
     catchup=False  
 )  
   
