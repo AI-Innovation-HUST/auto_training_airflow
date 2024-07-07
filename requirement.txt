@@ -6,4 +6,5 @@ seaborn
 ta
 tqdm
 scikit-learn
+okx
 apache-airflow

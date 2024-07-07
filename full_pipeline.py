@@ -210,7 +210,7 @@ default_args = {
 }  
   
 dag = DAG(  
-    'crawl_data_okx',  
+    'auto_training_crawling_data_okx',  
     default_args=default_args,  
     description='Crawl data and store as DataFrame',  
     schedule_interval='@weekly',  
