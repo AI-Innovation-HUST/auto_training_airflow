@@ -1,0 +1,34 @@
+[2024-10-22T03:20:03.412+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-22T03:20:03.422+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: auto_training_crawling_data_okx.crawl_data_task manual__2024-10-22T03:19:56.296638+00:00 [queued]>
+[2024-10-22T03:20:03.428+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: auto_training_crawling_data_okx.crawl_data_task manual__2024-10-22T03:19:56.296638+00:00 [queued]>
+[2024-10-22T03:20:03.428+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-10-22T03:20:03.451+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): crawl_data_task> on 2024-10-22 03:19:56.296638+00:00
+[2024-10-22T03:20:03.463+0000] {standard_task_runner.py:72} INFO - Started process 377520 to run task
+[2024-10-22T03:20:03.473+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'auto_training_crawling_data_okx', 'crawl_data_task', 'manual__2024-10-22T03:19:56.296638+00:00', '--job-id', '43', '--raw', '--subdir', 'DAGS_FOLDER/full_pipeline.py', '--cfg-path', '/tmp/tmpo4i9u6sk']
+[2024-10-22T03:20:03.476+0000] {standard_task_runner.py:105} INFO - Job 43: Subtask crawl_data_task
+[2024-10-22T03:20:03.530+0000] {task_command.py:467} INFO - Running <TaskInstance: auto_training_crawling_data_okx.crawl_data_task manual__2024-10-22T03:19:56.296638+00:00 [running]> on host ecs-gpu
+[2024-10-22T03:20:03.907+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='auto_training_crawling_data_okx' AIRFLOW_CTX_TASK_ID='crawl_data_task' AIRFLOW_CTX_EXECUTION_DATE='2024-10-22T03:19:56.296638+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-22T03:19:56.296638+00:00'
+[2024-10-22T03:20:03.908+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-22T03:20:04.123+0000] {_client.py:1038} INFO - HTTP Request: GET https://www.okx.com/api/v5/market/candles?instId=BTC-USDT&bar=4H&limit=300 "HTTP/2 200 OK"
+[2024-10-22T03:20:04.141+0000] {logging_mixin.py:190} INFO - Shape của DataFrame: (180, 9)
+[2024-10-22T03:20:04.142+0000] {logging_mixin.py:190} INFO - Thời gian bắt đầu: 2024-09-22 04:00:00
+[2024-10-22T03:20:04.142+0000] {logging_mixin.py:190} INFO - Thời gian kết thúc: 2024-10-22 00:00:00
+[2024-10-22T03:20:04.439+0000] {python.py:240} INFO - Done. Returned value was:                      ts        o        h  ...  others_dr  others_dlr  others_cr
+0   2024-10-22 00:00:00  67371.8  67688.0  ...   0.000000    0.000000   0.000000
+1   2024-10-21 20:00:00  67756.0  67922.0  ...  -0.092238   -0.092281  -0.092238
+2   2024-10-21 16:00:00  67331.5  67925.9  ...   0.570269    0.568649   0.477505
+3   2024-10-21 12:00:00  68241.4  68339.8  ...  -0.626366   -0.628336  -0.151852
+4   2024-10-21 08:00:00  68512.4  68664.9  ...   1.351373    1.342324   1.197469
+..                  ...      ...      ...  ...        ...         ...        ...
+175 2024-09-22 20:00:00  63164.1  64019.0  ...  -1.218949   -1.226440  -5.723679
+176 2024-09-22 16:00:00  62656.0  63229.8  ...  -0.645073   -0.647163  -6.331830
+177 2024-09-22 12:00:00  62779.4  62940.0  ...  -0.804254   -0.807506  -7.085160
+178 2024-09-22 08:00:00  62944.2  63035.0  ...   0.196629    0.196436  -6.902463
+179 2024-09-22 04:00:00  63114.9  63205.9  ...   0.262507    0.262163  -6.658076
+
+[180 rows x 95 columns]
+[2024-10-22T03:20:04.612+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-22T03:20:04.612+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=auto_training_crawling_data_okx, task_id=crawl_data_task, run_id=manual__2024-10-22T03:19:56.296638+00:00, execution_date=20241022T031956, start_date=20241022T032003, end_date=20241022T032004
+[2024-10-22T03:20:04.687+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-22T03:20:04.710+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-22T03:20:04.722+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

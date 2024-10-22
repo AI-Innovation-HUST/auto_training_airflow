@@ -1,0 +1,749 @@
+[2024-10-22T04:05:32.302+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-22T04:05:32.312+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: auto_training_crawling_data_okx.training_model manual__2024-10-22T04:05:11.643675+00:00 [queued]>
+[2024-10-22T04:05:32.319+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: auto_training_crawling_data_okx.training_model manual__2024-10-22T04:05:11.643675+00:00 [queued]>
+[2024-10-22T04:05:32.319+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-10-22T04:05:32.343+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): training_model> on 2024-10-22 04:05:11.643675+00:00
+[2024-10-22T04:05:32.357+0000] {standard_task_runner.py:72} INFO - Started process 392748 to run task
+[2024-10-22T04:05:32.367+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'auto_training_crawling_data_okx', 'training_model', 'manual__2024-10-22T04:05:11.643675+00:00', '--job-id', '59', '--raw', '--subdir', 'DAGS_FOLDER/full_pipeline.py', '--cfg-path', '/tmp/tmpqd7edzwv']
+[2024-10-22T04:05:32.372+0000] {standard_task_runner.py:105} INFO - Job 59: Subtask training_model
+[2024-10-22T04:05:32.421+0000] {task_command.py:467} INFO - Running <TaskInstance: auto_training_crawling_data_okx.training_model manual__2024-10-22T04:05:11.643675+00:00 [running]> on host ecs-gpu
+[2024-10-22T04:05:32.517+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='auto_training_crawling_data_okx' AIRFLOW_CTX_TASK_ID='training_model' AIRFLOW_CTX_EXECUTION_DATE='2024-10-22T04:05:11.643675+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-22T04:05:11.643675+00:00'
+[2024-10-22T04:05:32.518+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-22T04:05:32.538+0000] {logging_mixin.py:190} INFO - Bắt đầu training...
+[2024-10-22T04:05:32.583+0000] {logging_mixin.py:190} INFO - Using device: cuda:0
+[2024-10-22T04:05:32.591+0000] {logging_mixin.py:190} INFO - Train size: 129, Val size: 33, Test size: 18
+[2024-10-22T04:05:32.591+0000] {logging_mixin.py:190} INFO - 
+Một dòng dữ liệu mẫu:
+[2024-10-22T04:05:32.594+0000] {logging_mixin.py:190} INFO - ts                   2024-10-22 04:00:00
+o                               0.823661
+h                               0.767184
+l                               0.868452
+c                               0.818501
+                            ...         
+momentum_pvo_hist               0.228793
+momentum_kama                   0.843484
+others_dr                       0.443378
+others_dlr                      0.449596
+others_cr                       0.818501
+Name: 0, Length: 95, dtype: object
+[2024-10-22T04:05:32.595+0000] {logging_mixin.py:190} INFO - Train dataset size: 128
+[2024-10-22T04:05:32.596+0000] {logging_mixin.py:190} INFO - Validation dataset size: 32
+[2024-10-22T04:05:32.596+0000] {logging_mixin.py:190} INFO - Test dataset size: 16
+[2024-10-22T04:05:32.596+0000] {logging_mixin.py:190} INFO - Vocabulary size from data: 94
+[2024-10-22T04:05:35.160+0000] {logging_mixin.py:190} INFO - Epoch 0:
+[2024-10-22T04:05:35.161+0000] {logging_mixin.py:190} INFO - Loss high: 1.6515
+[2024-10-22T04:05:35.161+0000] {logging_mixin.py:190} INFO - Loss low: 4.6103
+[2024-10-22T04:05:35.162+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:05:35.162+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:05:35.162+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:05:35.355+0000] {logging_mixin.py:190} WARNING - /root/miniconda3/envs/project/lib/python3.8/site-packages/torch/nn/modules/loss.py:538 UserWarning: Using a target size (torch.Size([32])) that is different to the input size (torch.Size([32, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+[2024-10-22T04:05:35.386+0000] {logging_mixin.py:190} INFO - Epoch 0 - Validation: Loss = 0.9417, High Acc = 68.2129, Low Acc = 41.3534
+[2024-10-22T04:05:35.664+0000] {logging_mixin.py:190} INFO - Saved new best model with validation loss: 0.9417
+[2024-10-22T04:05:36.379+0000] {logging_mixin.py:190} INFO - Epoch 1:
+[2024-10-22T04:05:36.380+0000] {logging_mixin.py:190} INFO - Loss high: 1.7366
+[2024-10-22T04:05:36.380+0000] {logging_mixin.py:190} INFO - Loss low: 1.3562
+[2024-10-22T04:05:36.381+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:05:36.381+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:05:36.381+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:05:36.597+0000] {logging_mixin.py:190} INFO - Epoch 1 - Validation: Loss = 1.4661, High Acc = 35.6415, Low Acc = 90.2358
+[2024-10-22T04:05:37.343+0000] {logging_mixin.py:190} INFO - Epoch 2:
+[2024-10-22T04:05:37.344+0000] {logging_mixin.py:190} INFO - Loss high: 0.9184
+[2024-10-22T04:05:37.344+0000] {logging_mixin.py:190} INFO - Loss low: 2.6770
+[2024-10-22T04:05:37.344+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:05:37.345+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:05:37.345+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:05:37.571+0000] {logging_mixin.py:190} INFO - Epoch 2 - Validation: Loss = 0.9076, High Acc = 78.5311, Low Acc = 26.4092
+[2024-10-22T04:05:38.110+0000] {logging_mixin.py:190} INFO - Saved new best model with validation loss: 0.9076
+[2024-10-22T04:05:38.791+0000] {logging_mixin.py:190} INFO - Epoch 3:
+[2024-10-22T04:05:38.793+0000] {logging_mixin.py:190} INFO - Loss high: 1.3102
+[2024-10-22T04:05:38.793+0000] {logging_mixin.py:190} INFO - Loss low: 0.9598
+[2024-10-22T04:05:38.794+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:05:38.795+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:05:38.795+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:05:39.016+0000] {logging_mixin.py:190} INFO - Epoch 3 - Validation: Loss = 0.8122, High Acc = 31.7976, Low Acc = 63.4658
+[2024-10-22T04:05:39.321+0000] {logging_mixin.py:190} INFO - Saved new best model with validation loss: 0.8122
+[2024-10-22T04:05:40.049+0000] {logging_mixin.py:190} INFO - Epoch 4:
+[2024-10-22T04:05:40.051+0000] {logging_mixin.py:190} INFO - Loss high: 0.7187
+[2024-10-22T04:05:40.051+0000] {logging_mixin.py:190} INFO - Loss low: 1.6637
+[2024-10-22T04:05:40.052+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:05:40.053+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:05:40.053+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:05:40.262+0000] {logging_mixin.py:190} INFO - Epoch 4 - Validation: Loss = 0.6005, High Acc = 33.2684, Low Acc = 50.1417
+[2024-10-22T04:05:40.572+0000] {logging_mixin.py:190} INFO - Saved new best model with validation loss: 0.6005
+[2024-10-22T04:05:41.237+0000] {logging_mixin.py:190} INFO - Epoch 5:
+[2024-10-22T04:05:41.239+0000] {logging_mixin.py:190} INFO - Loss high: 1.1162
+[2024-10-22T04:05:41.240+0000] {logging_mixin.py:190} INFO - Loss low: 0.9202
+[2024-10-22T04:05:41.240+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:05:41.241+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:05:41.242+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:05:41.460+0000] {logging_mixin.py:190} INFO - Epoch 5 - Validation: Loss = 0.0516, High Acc = 13.8723, Low Acc = 8.0805
+[2024-10-22T04:05:41.779+0000] {logging_mixin.py:190} INFO - Saved new best model with validation loss: 0.0516
+[2024-10-22T04:05:42.460+0000] {logging_mixin.py:190} INFO - Epoch 6:
+[2024-10-22T04:05:42.461+0000] {logging_mixin.py:190} INFO - Loss high: 0.7125
+[2024-10-22T04:05:42.462+0000] {logging_mixin.py:190} INFO - Loss low: 0.9464
+[2024-10-22T04:05:42.463+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:05:42.464+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:05:42.464+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:05:42.690+0000] {logging_mixin.py:190} INFO - Epoch 6 - Validation: Loss = 0.2270, High Acc = 23.6356, Low Acc = 30.8837
+[2024-10-22T04:05:43.414+0000] {logging_mixin.py:190} INFO - Epoch 7:
+[2024-10-22T04:05:43.416+0000] {logging_mixin.py:190} INFO - Loss high: 0.7042
+[2024-10-22T04:05:43.417+0000] {logging_mixin.py:190} INFO - Loss low: 1.0066
+[2024-10-22T04:05:43.418+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:05:43.418+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:05:43.419+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:05:43.640+0000] {logging_mixin.py:190} INFO - Epoch 7 - Validation: Loss = 0.2186, High Acc = 36.7439, Low Acc = 15.6993
+[2024-10-22T04:05:44.378+0000] {logging_mixin.py:190} INFO - Epoch 8:
+[2024-10-22T04:05:44.379+0000] {logging_mixin.py:190} INFO - Loss high: 0.8152
+[2024-10-22T04:05:44.380+0000] {logging_mixin.py:190} INFO - Loss low: 0.7642
+[2024-10-22T04:05:44.380+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:05:44.381+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:05:44.382+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:05:44.615+0000] {logging_mixin.py:190} INFO - Epoch 8 - Validation: Loss = 0.1208, High Acc = 23.4602, Low Acc = 14.3280
+[2024-10-22T04:05:45.308+0000] {logging_mixin.py:190} INFO - Epoch 9:
+[2024-10-22T04:05:45.310+0000] {logging_mixin.py:190} INFO - Loss high: 0.6972
+[2024-10-22T04:05:45.311+0000] {logging_mixin.py:190} INFO - Loss low: 0.5969
+[2024-10-22T04:05:45.311+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:05:45.312+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:05:45.313+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:05:45.547+0000] {logging_mixin.py:190} INFO - Epoch 9 - Validation: Loss = 0.2184, High Acc = 7.3272, Low Acc = 34.2098
+[2024-10-22T04:05:46.244+0000] {logging_mixin.py:190} INFO - Epoch 10:
+[2024-10-22T04:05:46.246+0000] {logging_mixin.py:190} INFO - Loss high: 0.5548
+[2024-10-22T04:05:46.247+0000] {logging_mixin.py:190} INFO - Loss low: 0.6945
+[2024-10-22T04:05:46.247+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:05:46.248+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:05:46.248+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:05:46.473+0000] {logging_mixin.py:190} INFO - Epoch 10 - Validation: Loss = 0.2640, High Acc = 10.2007, Low Acc = 37.1519
+[2024-10-22T04:05:47.192+0000] {logging_mixin.py:190} INFO - Epoch 11:
+[2024-10-22T04:05:47.194+0000] {logging_mixin.py:190} INFO - Loss high: 0.6741
+[2024-10-22T04:05:47.194+0000] {logging_mixin.py:190} INFO - Loss low: 0.5099
+[2024-10-22T04:05:47.195+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:05:47.195+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:05:47.196+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:05:47.403+0000] {logging_mixin.py:190} INFO - Epoch 11 - Validation: Loss = 0.1590, High Acc = 7.2504, Low Acc = 28.5567
+[2024-10-22T04:05:48.158+0000] {logging_mixin.py:190} INFO - Epoch 12:
+[2024-10-22T04:05:48.159+0000] {logging_mixin.py:190} INFO - Loss high: 0.5674
+[2024-10-22T04:05:48.160+0000] {logging_mixin.py:190} INFO - Loss low: 0.4730
+[2024-10-22T04:05:48.160+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:05:48.161+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:05:48.161+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:05:48.393+0000] {logging_mixin.py:190} INFO - Epoch 12 - Validation: Loss = 0.1092, High Acc = 17.7286, Low Acc = 17.6294
+[2024-10-22T04:05:49.103+0000] {logging_mixin.py:190} INFO - Epoch 13:
+[2024-10-22T04:05:49.104+0000] {logging_mixin.py:190} INFO - Loss high: 0.5396
+[2024-10-22T04:05:49.105+0000] {logging_mixin.py:190} INFO - Loss low: 0.5432
+[2024-10-22T04:05:49.105+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:05:49.106+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:05:49.106+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:05:49.322+0000] {logging_mixin.py:190} INFO - Epoch 13 - Validation: Loss = 0.1290, High Acc = 28.0056, Low Acc = 10.1474
+[2024-10-22T04:05:50.053+0000] {logging_mixin.py:190} INFO - Epoch 14:
+[2024-10-22T04:05:50.055+0000] {logging_mixin.py:190} INFO - Loss high: 0.5818
+[2024-10-22T04:05:50.055+0000] {logging_mixin.py:190} INFO - Loss low: 0.5505
+[2024-10-22T04:05:50.055+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:05:50.056+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:05:50.056+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:05:50.280+0000] {logging_mixin.py:190} INFO - Epoch 14 - Validation: Loss = 0.0991, High Acc = 25.7481, Low Acc = 6.7968
+[2024-10-22T04:05:51.041+0000] {logging_mixin.py:190} INFO - Epoch 15:
+[2024-10-22T04:05:51.042+0000] {logging_mixin.py:190} INFO - Loss high: 0.5007
+[2024-10-22T04:05:51.043+0000] {logging_mixin.py:190} INFO - Loss low: 0.5095
+[2024-10-22T04:05:51.043+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:05:51.044+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:05:51.044+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:05:51.254+0000] {logging_mixin.py:190} INFO - Epoch 15 - Validation: Loss = 0.0511, High Acc = 16.8704, Low Acc = 6.5788
+[2024-10-22T04:05:51.559+0000] {logging_mixin.py:190} INFO - Saved new best model with validation loss: 0.0511
+[2024-10-22T04:05:52.247+0000] {logging_mixin.py:190} INFO - Epoch 16:
+[2024-10-22T04:05:52.248+0000] {logging_mixin.py:190} INFO - Loss high: 0.5678
+[2024-10-22T04:05:52.249+0000] {logging_mixin.py:190} INFO - Loss low: 0.5425
+[2024-10-22T04:05:52.249+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:05:52.249+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:05:52.249+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:05:52.464+0000] {logging_mixin.py:190} INFO - Epoch 16 - Validation: Loss = 0.0305, High Acc = 8.7984, Low Acc = 7.8830
+[2024-10-22T04:05:52.749+0000] {logging_mixin.py:190} INFO - Saved new best model with validation loss: 0.0305
+[2024-10-22T04:05:53.426+0000] {logging_mixin.py:190} INFO - Epoch 17:
+[2024-10-22T04:05:53.427+0000] {logging_mixin.py:190} INFO - Loss high: 0.4691
+[2024-10-22T04:05:53.428+0000] {logging_mixin.py:190} INFO - Loss low: 0.5740
+[2024-10-22T04:05:53.428+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:05:53.428+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:05:53.428+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:05:53.631+0000] {logging_mixin.py:190} INFO - Epoch 17 - Validation: Loss = 0.0452, High Acc = 7.1121, Low Acc = 12.3832
+[2024-10-22T04:05:54.308+0000] {logging_mixin.py:190} INFO - Epoch 18:
+[2024-10-22T04:05:54.309+0000] {logging_mixin.py:190} INFO - Loss high: 0.4993
+[2024-10-22T04:05:54.310+0000] {logging_mixin.py:190} INFO - Loss low: 0.4306
+[2024-10-22T04:05:54.310+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:05:54.311+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:05:54.311+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:05:54.553+0000] {logging_mixin.py:190} INFO - Epoch 18 - Validation: Loss = 0.0807, High Acc = 8.1661, Low Acc = 18.0933
+[2024-10-22T04:05:55.270+0000] {logging_mixin.py:190} INFO - Epoch 19:
+[2024-10-22T04:05:55.271+0000] {logging_mixin.py:190} INFO - Loss high: 0.5280
+[2024-10-22T04:05:55.272+0000] {logging_mixin.py:190} INFO - Loss low: 0.4491
+[2024-10-22T04:05:55.272+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:05:55.273+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:05:55.273+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:05:55.498+0000] {logging_mixin.py:190} INFO - Epoch 19 - Validation: Loss = 0.0948, High Acc = 7.1315, Low Acc = 20.8900
+[2024-10-22T04:05:56.204+0000] {logging_mixin.py:190} INFO - Epoch 20:
+[2024-10-22T04:05:56.205+0000] {logging_mixin.py:190} INFO - Loss high: 0.4087
+[2024-10-22T04:05:56.206+0000] {logging_mixin.py:190} INFO - Loss low: 0.4263
+[2024-10-22T04:05:56.206+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:05:56.206+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:05:56.207+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:05:56.419+0000] {logging_mixin.py:190} INFO - Epoch 20 - Validation: Loss = 0.1036, High Acc = 7.3995, Low Acc = 22.1231
+[2024-10-22T04:05:57.125+0000] {logging_mixin.py:190} INFO - Epoch 21:
+[2024-10-22T04:05:57.126+0000] {logging_mixin.py:190} INFO - Loss high: 0.4851
+[2024-10-22T04:05:57.127+0000] {logging_mixin.py:190} INFO - Loss low: 0.3995
+[2024-10-22T04:05:57.127+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:05:57.127+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:05:57.128+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:05:57.346+0000] {logging_mixin.py:190} INFO - Epoch 21 - Validation: Loss = 0.0963, High Acc = 9.2028, Low Acc = 20.2486
+[2024-10-22T04:05:58.035+0000] {logging_mixin.py:190} INFO - Epoch 22:
+[2024-10-22T04:05:58.037+0000] {logging_mixin.py:190} INFO - Loss high: 0.5542
+[2024-10-22T04:05:58.038+0000] {logging_mixin.py:190} INFO - Loss low: 0.4872
+[2024-10-22T04:05:58.038+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:05:58.039+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:05:58.039+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:05:58.268+0000] {logging_mixin.py:190} INFO - Epoch 22 - Validation: Loss = 0.0808, High Acc = 10.2213, Low Acc = 17.3929
+[2024-10-22T04:05:59.002+0000] {logging_mixin.py:190} INFO - Epoch 23:
+[2024-10-22T04:05:59.003+0000] {logging_mixin.py:190} INFO - Loss high: 0.4176
+[2024-10-22T04:05:59.004+0000] {logging_mixin.py:190} INFO - Loss low: 0.4169
+[2024-10-22T04:05:59.004+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:05:59.004+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:05:59.005+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:05:59.232+0000] {logging_mixin.py:190} INFO - Epoch 23 - Validation: Loss = 0.0599, High Acc = 8.9524, Low Acc = 14.3043
+[2024-10-22T04:06:00.006+0000] {logging_mixin.py:190} INFO - Epoch 24:
+[2024-10-22T04:06:00.007+0000] {logging_mixin.py:190} INFO - Loss high: 0.5080
+[2024-10-22T04:06:00.008+0000] {logging_mixin.py:190} INFO - Loss low: 0.4478
+[2024-10-22T04:06:00.009+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:00.009+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:00.010+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:00.228+0000] {logging_mixin.py:190} INFO - Epoch 24 - Validation: Loss = 0.0447, High Acc = 7.5882, Low Acc = 12.1925
+[2024-10-22T04:06:00.975+0000] {logging_mixin.py:190} INFO - Epoch 25:
+[2024-10-22T04:06:00.976+0000] {logging_mixin.py:190} INFO - Loss high: 0.4548
+[2024-10-22T04:06:00.977+0000] {logging_mixin.py:190} INFO - Loss low: 0.4610
+[2024-10-22T04:06:00.977+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:00.978+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:00.978+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:01.196+0000] {logging_mixin.py:190} INFO - Epoch 25 - Validation: Loss = 0.0360, High Acc = 7.4524, Low Acc = 10.3425
+[2024-10-22T04:06:01.909+0000] {logging_mixin.py:190} INFO - Epoch 26:
+[2024-10-22T04:06:01.910+0000] {logging_mixin.py:190} INFO - Loss high: 0.5151
+[2024-10-22T04:06:01.910+0000] {logging_mixin.py:190} INFO - Loss low: 0.4590
+[2024-10-22T04:06:01.911+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:01.911+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:01.911+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:02.129+0000] {logging_mixin.py:190} INFO - Epoch 26 - Validation: Loss = 0.0340, High Acc = 7.7290, Low Acc = 9.6436
+[2024-10-22T04:06:02.856+0000] {logging_mixin.py:190} INFO - Epoch 27:
+[2024-10-22T04:06:02.857+0000] {logging_mixin.py:190} INFO - Loss high: 0.4810
+[2024-10-22T04:06:02.857+0000] {logging_mixin.py:190} INFO - Loss low: 0.3778
+[2024-10-22T04:06:02.858+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:02.858+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:02.858+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:03.079+0000] {logging_mixin.py:190} INFO - Epoch 27 - Validation: Loss = 0.0337, High Acc = 7.6692, Low Acc = 9.6247
+[2024-10-22T04:06:03.836+0000] {logging_mixin.py:190} INFO - Epoch 28:
+[2024-10-22T04:06:03.838+0000] {logging_mixin.py:190} INFO - Loss high: 0.4052
+[2024-10-22T04:06:03.838+0000] {logging_mixin.py:190} INFO - Loss low: 0.4940
+[2024-10-22T04:06:03.838+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:03.839+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:03.839+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:04.069+0000] {logging_mixin.py:190} INFO - Epoch 28 - Validation: Loss = 0.0347, High Acc = 7.5962, Low Acc = 9.9211
+[2024-10-22T04:06:04.816+0000] {logging_mixin.py:190} INFO - Epoch 29:
+[2024-10-22T04:06:04.818+0000] {logging_mixin.py:190} INFO - Loss high: 0.4479
+[2024-10-22T04:06:04.819+0000] {logging_mixin.py:190} INFO - Loss low: 0.4381
+[2024-10-22T04:06:04.819+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:04.819+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:04.820+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:05.041+0000] {logging_mixin.py:190} INFO - Epoch 29 - Validation: Loss = 0.0374, High Acc = 7.5327, Low Acc = 10.5927
+[2024-10-22T04:06:05.764+0000] {logging_mixin.py:190} INFO - Epoch 30:
+[2024-10-22T04:06:05.765+0000] {logging_mixin.py:190} INFO - Loss high: 0.4227
+[2024-10-22T04:06:05.766+0000] {logging_mixin.py:190} INFO - Loss low: 0.4797
+[2024-10-22T04:06:05.766+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:05.766+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:05.767+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:05.988+0000] {logging_mixin.py:190} INFO - Epoch 30 - Validation: Loss = 0.0368, High Acc = 7.1473, Low Acc = 10.7296
+[2024-10-22T04:06:06.734+0000] {logging_mixin.py:190} INFO - Epoch 31:
+[2024-10-22T04:06:06.736+0000] {logging_mixin.py:190} INFO - Loss high: 0.4470
+[2024-10-22T04:06:06.736+0000] {logging_mixin.py:190} INFO - Loss low: 0.3671
+[2024-10-22T04:06:06.737+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:06.737+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:06.737+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:06.973+0000] {logging_mixin.py:190} INFO - Epoch 31 - Validation: Loss = 0.0365, High Acc = 6.8988, Low Acc = 10.6629
+[2024-10-22T04:06:07.689+0000] {logging_mixin.py:190} INFO - Epoch 32:
+[2024-10-22T04:06:07.690+0000] {logging_mixin.py:190} INFO - Loss high: 0.4731
+[2024-10-22T04:06:07.690+0000] {logging_mixin.py:190} INFO - Loss low: 0.4128
+[2024-10-22T04:06:07.691+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:07.691+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:07.692+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:07.907+0000] {logging_mixin.py:190} INFO - Epoch 32 - Validation: Loss = 0.0371, High Acc = 7.0644, Low Acc = 10.6064
+[2024-10-22T04:06:08.634+0000] {logging_mixin.py:190} INFO - Epoch 33:
+[2024-10-22T04:06:08.635+0000] {logging_mixin.py:190} INFO - Loss high: 0.5011
+[2024-10-22T04:06:08.635+0000] {logging_mixin.py:190} INFO - Loss low: 0.3385
+[2024-10-22T04:06:08.635+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:08.636+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:08.636+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:08.854+0000] {logging_mixin.py:190} INFO - Epoch 33 - Validation: Loss = 0.0390, High Acc = 6.9809, Low Acc = 11.1298
+[2024-10-22T04:06:09.572+0000] {logging_mixin.py:190} INFO - Epoch 34:
+[2024-10-22T04:06:09.573+0000] {logging_mixin.py:190} INFO - Loss high: 0.4592
+[2024-10-22T04:06:09.573+0000] {logging_mixin.py:190} INFO - Loss low: 0.4048
+[2024-10-22T04:06:09.574+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:09.574+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:09.574+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:09.799+0000] {logging_mixin.py:190} INFO - Epoch 34 - Validation: Loss = 0.0399, High Acc = 6.9398, Low Acc = 11.3810
+[2024-10-22T04:06:10.548+0000] {logging_mixin.py:190} INFO - Epoch 35:
+[2024-10-22T04:06:10.550+0000] {logging_mixin.py:190} INFO - Loss high: 0.4728
+[2024-10-22T04:06:10.550+0000] {logging_mixin.py:190} INFO - Loss low: 0.4062
+[2024-10-22T04:06:10.550+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:10.551+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:10.551+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:10.766+0000] {logging_mixin.py:190} INFO - Epoch 35 - Validation: Loss = 0.0416, High Acc = 6.8598, Low Acc = 11.8331
+[2024-10-22T04:06:11.486+0000] {logging_mixin.py:190} INFO - Epoch 36:
+[2024-10-22T04:06:11.487+0000] {logging_mixin.py:190} INFO - Loss high: 0.3773
+[2024-10-22T04:06:11.488+0000] {logging_mixin.py:190} INFO - Loss low: 0.4563
+[2024-10-22T04:06:11.488+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:11.489+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:11.489+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:11.711+0000] {logging_mixin.py:190} INFO - Epoch 36 - Validation: Loss = 0.0402, High Acc = 6.8427, Low Acc = 11.5402
+[2024-10-22T04:06:12.452+0000] {logging_mixin.py:190} INFO - Epoch 37:
+[2024-10-22T04:06:12.453+0000] {logging_mixin.py:190} INFO - Loss high: 0.4063
+[2024-10-22T04:06:12.453+0000] {logging_mixin.py:190} INFO - Loss low: 0.4313
+[2024-10-22T04:06:12.453+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:12.454+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:12.454+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:12.711+0000] {logging_mixin.py:190} INFO - Epoch 37 - Validation: Loss = 0.0378, High Acc = 6.8447, Low Acc = 11.0693
+[2024-10-22T04:06:13.470+0000] {logging_mixin.py:190} INFO - Epoch 38:
+[2024-10-22T04:06:13.472+0000] {logging_mixin.py:190} INFO - Loss high: 0.3512
+[2024-10-22T04:06:13.472+0000] {logging_mixin.py:190} INFO - Loss low: 0.5462
+[2024-10-22T04:06:13.473+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:13.473+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:13.473+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:13.705+0000] {logging_mixin.py:190} INFO - Epoch 38 - Validation: Loss = 0.0362, High Acc = 6.8496, Low Acc = 10.6955
+[2024-10-22T04:06:14.459+0000] {logging_mixin.py:190} INFO - Epoch 39:
+[2024-10-22T04:06:14.460+0000] {logging_mixin.py:190} INFO - Loss high: 0.4490
+[2024-10-22T04:06:14.460+0000] {logging_mixin.py:190} INFO - Loss low: 0.4023
+[2024-10-22T04:06:14.460+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:14.461+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:14.461+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:14.679+0000] {logging_mixin.py:190} INFO - Epoch 39 - Validation: Loss = 0.0324, High Acc = 6.8268, Low Acc = 9.7896
+[2024-10-22T04:06:15.449+0000] {logging_mixin.py:190} INFO - Epoch 40:
+[2024-10-22T04:06:15.450+0000] {logging_mixin.py:190} INFO - Loss high: 0.5121
+[2024-10-22T04:06:15.450+0000] {logging_mixin.py:190} INFO - Loss low: 0.4022
+[2024-10-22T04:06:15.451+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:15.451+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:15.451+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:15.670+0000] {logging_mixin.py:190} INFO - Epoch 40 - Validation: Loss = 0.0303, High Acc = 6.8715, Low Acc = 9.1838
+[2024-10-22T04:06:15.962+0000] {logging_mixin.py:190} INFO - Saved new best model with validation loss: 0.0303
+[2024-10-22T04:06:16.648+0000] {logging_mixin.py:190} INFO - Epoch 41:
+[2024-10-22T04:06:16.649+0000] {logging_mixin.py:190} INFO - Loss high: 0.3825
+[2024-10-22T04:06:16.649+0000] {logging_mixin.py:190} INFO - Loss low: 0.4886
+[2024-10-22T04:06:16.649+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:16.649+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:16.650+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:16.844+0000] {logging_mixin.py:190} INFO - Epoch 41 - Validation: Loss = 0.0300, High Acc = 6.8897, Low Acc = 9.0874
+[2024-10-22T04:06:17.091+0000] {logging_mixin.py:190} INFO - Saved new best model with validation loss: 0.0300
+[2024-10-22T04:06:17.774+0000] {logging_mixin.py:190} INFO - Epoch 42:
+[2024-10-22T04:06:17.776+0000] {logging_mixin.py:190} INFO - Loss high: 0.4913
+[2024-10-22T04:06:17.776+0000] {logging_mixin.py:190} INFO - Loss low: 0.3697
+[2024-10-22T04:06:17.776+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:17.777+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:17.777+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:18.001+0000] {logging_mixin.py:190} INFO - Epoch 42 - Validation: Loss = 0.0290, High Acc = 6.8730, Low Acc = 8.8714
+[2024-10-22T04:06:18.305+0000] {logging_mixin.py:190} INFO - Saved new best model with validation loss: 0.0290
+[2024-10-22T04:06:18.994+0000] {logging_mixin.py:190} INFO - Epoch 43:
+[2024-10-22T04:06:18.996+0000] {logging_mixin.py:190} INFO - Loss high: 0.4255
+[2024-10-22T04:06:18.997+0000] {logging_mixin.py:190} INFO - Loss low: 0.4949
+[2024-10-22T04:06:18.998+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:18.999+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:19.000+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:19.225+0000] {logging_mixin.py:190} INFO - Epoch 43 - Validation: Loss = 0.0297, High Acc = 6.8331, Low Acc = 9.0913
+[2024-10-22T04:06:19.918+0000] {logging_mixin.py:190} INFO - Epoch 44:
+[2024-10-22T04:06:19.919+0000] {logging_mixin.py:190} INFO - Loss high: 0.5685
+[2024-10-22T04:06:19.919+0000] {logging_mixin.py:190} INFO - Loss low: 0.4481
+[2024-10-22T04:06:19.920+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:19.920+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:19.921+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:20.128+0000] {logging_mixin.py:190} INFO - Epoch 44 - Validation: Loss = 0.0315, High Acc = 6.8516, Low Acc = 9.5055
+[2024-10-22T04:06:20.834+0000] {logging_mixin.py:190} INFO - Epoch 45:
+[2024-10-22T04:06:20.835+0000] {logging_mixin.py:190} INFO - Loss high: 0.5135
+[2024-10-22T04:06:20.835+0000] {logging_mixin.py:190} INFO - Loss low: 0.3637
+[2024-10-22T04:06:20.836+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:20.836+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:20.836+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:21.063+0000] {logging_mixin.py:190} INFO - Epoch 45 - Validation: Loss = 0.0309, High Acc = 6.8433, Low Acc = 9.4429
+[2024-10-22T04:06:21.836+0000] {logging_mixin.py:190} INFO - Epoch 46:
+[2024-10-22T04:06:21.837+0000] {logging_mixin.py:190} INFO - Loss high: 0.4023
+[2024-10-22T04:06:21.838+0000] {logging_mixin.py:190} INFO - Loss low: 0.3646
+[2024-10-22T04:06:21.838+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:21.838+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:21.838+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:22.056+0000] {logging_mixin.py:190} INFO - Epoch 46 - Validation: Loss = 0.0324, High Acc = 6.9960, Low Acc = 9.7800
+[2024-10-22T04:06:22.780+0000] {logging_mixin.py:190} INFO - Epoch 47:
+[2024-10-22T04:06:22.781+0000] {logging_mixin.py:190} INFO - Loss high: 0.3368
+[2024-10-22T04:06:22.782+0000] {logging_mixin.py:190} INFO - Loss low: 0.4907
+[2024-10-22T04:06:22.783+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:22.784+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:22.784+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:23.003+0000] {logging_mixin.py:190} INFO - Epoch 47 - Validation: Loss = 0.0360, High Acc = 7.2387, Low Acc = 10.5147
+[2024-10-22T04:06:23.718+0000] {logging_mixin.py:190} INFO - Epoch 48:
+[2024-10-22T04:06:23.719+0000] {logging_mixin.py:190} INFO - Loss high: 0.4103
+[2024-10-22T04:06:23.720+0000] {logging_mixin.py:190} INFO - Loss low: 0.5036
+[2024-10-22T04:06:23.720+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:23.720+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:23.721+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:23.938+0000] {logging_mixin.py:190} INFO - Epoch 48 - Validation: Loss = 0.0380, High Acc = 7.3940, Low Acc = 10.8734
+[2024-10-22T04:06:24.663+0000] {logging_mixin.py:190} INFO - Epoch 49:
+[2024-10-22T04:06:24.664+0000] {logging_mixin.py:190} INFO - Loss high: 0.3898
+[2024-10-22T04:06:24.664+0000] {logging_mixin.py:190} INFO - Loss low: 0.3716
+[2024-10-22T04:06:24.664+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:24.665+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:24.665+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:24.888+0000] {logging_mixin.py:190} INFO - Epoch 49 - Validation: Loss = 0.0397, High Acc = 7.2422, Low Acc = 11.3642
+[2024-10-22T04:06:25.623+0000] {logging_mixin.py:190} INFO - Epoch 50:
+[2024-10-22T04:06:25.625+0000] {logging_mixin.py:190} INFO - Loss high: 0.4004
+[2024-10-22T04:06:25.625+0000] {logging_mixin.py:190} INFO - Loss low: 0.3701
+[2024-10-22T04:06:25.625+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:25.626+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:25.626+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:25.852+0000] {logging_mixin.py:190} INFO - Epoch 50 - Validation: Loss = 0.0402, High Acc = 7.0349, Low Acc = 11.5948
+[2024-10-22T04:06:26.576+0000] {logging_mixin.py:190} INFO - Epoch 51:
+[2024-10-22T04:06:26.577+0000] {logging_mixin.py:190} INFO - Loss high: 0.4162
+[2024-10-22T04:06:26.578+0000] {logging_mixin.py:190} INFO - Loss low: 0.4169
+[2024-10-22T04:06:26.578+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:26.578+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:26.579+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:26.791+0000] {logging_mixin.py:190} INFO - Epoch 51 - Validation: Loss = 0.0394, High Acc = 6.8484, Low Acc = 11.4523
+[2024-10-22T04:06:27.448+0000] {logging_mixin.py:190} INFO - Epoch 52:
+[2024-10-22T04:06:27.449+0000] {logging_mixin.py:190} INFO - Loss high: 0.5263
+[2024-10-22T04:06:27.450+0000] {logging_mixin.py:190} INFO - Loss low: 0.4932
+[2024-10-22T04:06:27.450+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:27.451+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:27.451+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:27.670+0000] {logging_mixin.py:190} INFO - Epoch 52 - Validation: Loss = 0.0395, High Acc = 6.8617, Low Acc = 11.3778
+[2024-10-22T04:06:28.397+0000] {logging_mixin.py:190} INFO - Epoch 53:
+[2024-10-22T04:06:28.398+0000] {logging_mixin.py:190} INFO - Loss high: 0.3455
+[2024-10-22T04:06:28.399+0000] {logging_mixin.py:190} INFO - Loss low: 0.4118
+[2024-10-22T04:06:28.399+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:28.399+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:28.400+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:28.623+0000] {logging_mixin.py:190} INFO - Epoch 53 - Validation: Loss = 0.0408, High Acc = 7.0912, Low Acc = 11.4194
+[2024-10-22T04:06:29.363+0000] {logging_mixin.py:190} INFO - Epoch 54:
+[2024-10-22T04:06:29.365+0000] {logging_mixin.py:190} INFO - Loss high: 0.4652
+[2024-10-22T04:06:29.365+0000] {logging_mixin.py:190} INFO - Loss low: 0.3714
+[2024-10-22T04:06:29.365+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:29.366+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:29.366+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:29.575+0000] {logging_mixin.py:190} INFO - Epoch 54 - Validation: Loss = 0.0412, High Acc = 7.4252, Low Acc = 11.1981
+[2024-10-22T04:06:30.285+0000] {logging_mixin.py:190} INFO - Epoch 55:
+[2024-10-22T04:06:30.286+0000] {logging_mixin.py:190} INFO - Loss high: 0.3555
+[2024-10-22T04:06:30.287+0000] {logging_mixin.py:190} INFO - Loss low: 0.4608
+[2024-10-22T04:06:30.287+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:30.287+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:30.288+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:30.499+0000] {logging_mixin.py:190} INFO - Epoch 55 - Validation: Loss = 0.0402, High Acc = 7.8231, Low Acc = 10.5637
+[2024-10-22T04:06:31.217+0000] {logging_mixin.py:190} INFO - Epoch 56:
+[2024-10-22T04:06:31.218+0000] {logging_mixin.py:190} INFO - Loss high: 0.4282
+[2024-10-22T04:06:31.218+0000] {logging_mixin.py:190} INFO - Loss low: 0.4477
+[2024-10-22T04:06:31.219+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:31.219+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:31.219+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:31.436+0000] {logging_mixin.py:190} INFO - Epoch 56 - Validation: Loss = 0.0386, High Acc = 8.1376, Low Acc = 9.8811
+[2024-10-22T04:06:32.141+0000] {logging_mixin.py:190} INFO - Epoch 57:
+[2024-10-22T04:06:32.142+0000] {logging_mixin.py:190} INFO - Loss high: 0.4169
+[2024-10-22T04:06:32.142+0000] {logging_mixin.py:190} INFO - Loss low: 0.5708
+[2024-10-22T04:06:32.142+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:32.143+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:32.143+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:32.357+0000] {logging_mixin.py:190} INFO - Epoch 57 - Validation: Loss = 0.0374, High Acc = 8.2201, Low Acc = 9.5090
+[2024-10-22T04:06:33.140+0000] {logging_mixin.py:190} INFO - Epoch 58:
+[2024-10-22T04:06:33.141+0000] {logging_mixin.py:190} INFO - Loss high: 0.4846
+[2024-10-22T04:06:33.142+0000] {logging_mixin.py:190} INFO - Loss low: 0.4422
+[2024-10-22T04:06:33.142+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:33.143+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:33.143+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:33.361+0000] {logging_mixin.py:190} INFO - Epoch 58 - Validation: Loss = 0.0364, High Acc = 8.2869, Low Acc = 9.2081
+[2024-10-22T04:06:34.082+0000] {logging_mixin.py:190} INFO - Epoch 59:
+[2024-10-22T04:06:34.083+0000] {logging_mixin.py:190} INFO - Loss high: 0.3791
+[2024-10-22T04:06:34.083+0000] {logging_mixin.py:190} INFO - Loss low: 0.4327
+[2024-10-22T04:06:34.084+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:34.084+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:34.084+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:34.312+0000] {logging_mixin.py:190} INFO - Epoch 59 - Validation: Loss = 0.0347, High Acc = 8.1158, Low Acc = 8.9455
+[2024-10-22T04:06:35.063+0000] {logging_mixin.py:190} INFO - Epoch 60:
+[2024-10-22T04:06:35.064+0000] {logging_mixin.py:190} INFO - Loss high: 0.4437
+[2024-10-22T04:06:35.064+0000] {logging_mixin.py:190} INFO - Loss low: 0.4524
+[2024-10-22T04:06:35.065+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:35.065+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:35.065+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:35.288+0000] {logging_mixin.py:190} INFO - Epoch 60 - Validation: Loss = 0.0338, High Acc = 7.7943, Low Acc = 9.0665
+[2024-10-22T04:06:36.070+0000] {logging_mixin.py:190} INFO - Epoch 61:
+[2024-10-22T04:06:36.071+0000] {logging_mixin.py:190} INFO - Loss high: 0.4980
+[2024-10-22T04:06:36.071+0000] {logging_mixin.py:190} INFO - Loss low: 0.3678
+[2024-10-22T04:06:36.072+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:36.072+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:36.072+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:36.302+0000] {logging_mixin.py:190} INFO - Epoch 61 - Validation: Loss = 0.0332, High Acc = 7.4418, Low Acc = 9.2925
+[2024-10-22T04:06:37.024+0000] {logging_mixin.py:190} INFO - Epoch 62:
+[2024-10-22T04:06:37.026+0000] {logging_mixin.py:190} INFO - Loss high: 0.3955
+[2024-10-22T04:06:37.026+0000] {logging_mixin.py:190} INFO - Loss low: 0.3746
+[2024-10-22T04:06:37.027+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:37.027+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:37.027+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:37.249+0000] {logging_mixin.py:190} INFO - Epoch 62 - Validation: Loss = 0.0331, High Acc = 7.1473, Low Acc = 9.5698
+[2024-10-22T04:06:37.982+0000] {logging_mixin.py:190} INFO - Epoch 63:
+[2024-10-22T04:06:37.983+0000] {logging_mixin.py:190} INFO - Loss high: 0.3379
+[2024-10-22T04:06:37.984+0000] {logging_mixin.py:190} INFO - Loss low: 0.3447
+[2024-10-22T04:06:37.984+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:37.984+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:37.985+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:38.216+0000] {logging_mixin.py:190} INFO - Epoch 63 - Validation: Loss = 0.0332, High Acc = 6.9229, Low Acc = 9.8222
+[2024-10-22T04:06:38.949+0000] {logging_mixin.py:190} INFO - Epoch 64:
+[2024-10-22T04:06:38.951+0000] {logging_mixin.py:190} INFO - Loss high: 0.4525
+[2024-10-22T04:06:38.951+0000] {logging_mixin.py:190} INFO - Loss low: 0.4916
+[2024-10-22T04:06:38.952+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:38.952+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:38.952+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:39.176+0000] {logging_mixin.py:190} INFO - Epoch 64 - Validation: Loss = 0.0326, High Acc = 6.8406, Low Acc = 9.7921
+[2024-10-22T04:06:39.913+0000] {logging_mixin.py:190} INFO - Epoch 65:
+[2024-10-22T04:06:39.914+0000] {logging_mixin.py:190} INFO - Loss high: 0.4842
+[2024-10-22T04:06:39.914+0000] {logging_mixin.py:190} INFO - Loss low: 0.4589
+[2024-10-22T04:06:39.915+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:39.915+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:39.915+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:40.139+0000] {logging_mixin.py:190} INFO - Epoch 65 - Validation: Loss = 0.0320, High Acc = 6.8278, Low Acc = 9.6699
+[2024-10-22T04:06:40.872+0000] {logging_mixin.py:190} INFO - Epoch 66:
+[2024-10-22T04:06:40.873+0000] {logging_mixin.py:190} INFO - Loss high: 0.2996
+[2024-10-22T04:06:40.873+0000] {logging_mixin.py:190} INFO - Loss low: 0.4304
+[2024-10-22T04:06:40.874+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:40.874+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:40.875+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:41.093+0000] {logging_mixin.py:190} INFO - Epoch 66 - Validation: Loss = 0.0317, High Acc = 6.8282, Low Acc = 9.6050
+[2024-10-22T04:06:41.827+0000] {logging_mixin.py:190} INFO - Epoch 67:
+[2024-10-22T04:06:41.828+0000] {logging_mixin.py:190} INFO - Loss high: 0.4074
+[2024-10-22T04:06:41.829+0000] {logging_mixin.py:190} INFO - Loss low: 0.3774
+[2024-10-22T04:06:41.829+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:41.829+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:41.830+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:42.045+0000] {logging_mixin.py:190} INFO - Epoch 67 - Validation: Loss = 0.0316, High Acc = 6.8294, Low Acc = 9.5703
+[2024-10-22T04:06:42.762+0000] {logging_mixin.py:190} INFO - Epoch 68:
+[2024-10-22T04:06:42.764+0000] {logging_mixin.py:190} INFO - Loss high: 0.4971
+[2024-10-22T04:06:42.764+0000] {logging_mixin.py:190} INFO - Loss low: 0.4881
+[2024-10-22T04:06:42.764+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:42.765+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:42.765+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:42.984+0000] {logging_mixin.py:190} INFO - Epoch 68 - Validation: Loss = 0.0319, High Acc = 6.8304, Low Acc = 9.6490
+[2024-10-22T04:06:43.712+0000] {logging_mixin.py:190} INFO - Epoch 69:
+[2024-10-22T04:06:43.714+0000] {logging_mixin.py:190} INFO - Loss high: 0.4573
+[2024-10-22T04:06:43.714+0000] {logging_mixin.py:190} INFO - Loss low: 0.4396
+[2024-10-22T04:06:43.715+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:43.715+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:43.715+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:43.939+0000] {logging_mixin.py:190} INFO - Epoch 69 - Validation: Loss = 0.0327, High Acc = 6.8337, Low Acc = 9.8479
+[2024-10-22T04:06:44.668+0000] {logging_mixin.py:190} INFO - Epoch 70:
+[2024-10-22T04:06:44.670+0000] {logging_mixin.py:190} INFO - Loss high: 0.3553
+[2024-10-22T04:06:44.670+0000] {logging_mixin.py:190} INFO - Loss low: 0.3930
+[2024-10-22T04:06:44.671+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:44.671+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:44.671+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:44.894+0000] {logging_mixin.py:190} INFO - Epoch 70 - Validation: Loss = 0.0340, High Acc = 6.8461, Low Acc = 10.1900
+[2024-10-22T04:06:45.681+0000] {logging_mixin.py:190} INFO - Epoch 71:
+[2024-10-22T04:06:45.682+0000] {logging_mixin.py:190} INFO - Loss high: 0.4198
+[2024-10-22T04:06:45.683+0000] {logging_mixin.py:190} INFO - Loss low: 0.5189
+[2024-10-22T04:06:45.683+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:45.683+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:45.684+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:45.900+0000] {logging_mixin.py:190} INFO - Epoch 71 - Validation: Loss = 0.0350, High Acc = 6.8540, Low Acc = 10.4331
+[2024-10-22T04:06:46.627+0000] {logging_mixin.py:190} INFO - Epoch 72:
+[2024-10-22T04:06:46.628+0000] {logging_mixin.py:190} INFO - Loss high: 0.4983
+[2024-10-22T04:06:46.628+0000] {logging_mixin.py:190} INFO - Loss low: 0.4263
+[2024-10-22T04:06:46.629+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:46.629+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:46.630+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:46.850+0000] {logging_mixin.py:190} INFO - Epoch 72 - Validation: Loss = 0.0356, High Acc = 6.8497, Low Acc = 10.5580
+[2024-10-22T04:06:47.578+0000] {logging_mixin.py:190} INFO - Epoch 73:
+[2024-10-22T04:06:47.579+0000] {logging_mixin.py:190} INFO - Loss high: 0.4683
+[2024-10-22T04:06:47.580+0000] {logging_mixin.py:190} INFO - Loss low: 0.4436
+[2024-10-22T04:06:47.580+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:47.580+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:47.581+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:47.800+0000] {logging_mixin.py:190} INFO - Epoch 73 - Validation: Loss = 0.0361, High Acc = 6.8403, Low Acc = 10.6637
+[2024-10-22T04:06:48.530+0000] {logging_mixin.py:190} INFO - Epoch 74:
+[2024-10-22T04:06:48.531+0000] {logging_mixin.py:190} INFO - Loss high: 0.4167
+[2024-10-22T04:06:48.531+0000] {logging_mixin.py:190} INFO - Loss low: 0.3868
+[2024-10-22T04:06:48.532+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:48.532+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:48.533+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:48.755+0000] {logging_mixin.py:190} INFO - Epoch 74 - Validation: Loss = 0.0367, High Acc = 6.8351, Low Acc = 10.7997
+[2024-10-22T04:06:49.473+0000] {logging_mixin.py:190} INFO - Epoch 75:
+[2024-10-22T04:06:49.474+0000] {logging_mixin.py:190} INFO - Loss high: 0.4358
+[2024-10-22T04:06:49.475+0000] {logging_mixin.py:190} INFO - Loss low: 0.4231
+[2024-10-22T04:06:49.475+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:49.476+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:49.476+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:49.693+0000] {logging_mixin.py:190} INFO - Epoch 75 - Validation: Loss = 0.0369, High Acc = 6.8347, Low Acc = 10.8299
+[2024-10-22T04:06:50.420+0000] {logging_mixin.py:190} INFO - Epoch 76:
+[2024-10-22T04:06:50.421+0000] {logging_mixin.py:190} INFO - Loss high: 0.5239
+[2024-10-22T04:06:50.422+0000] {logging_mixin.py:190} INFO - Loss low: 0.4400
+[2024-10-22T04:06:50.422+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:50.422+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:50.423+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:50.647+0000] {logging_mixin.py:190} INFO - Epoch 76 - Validation: Loss = 0.0373, High Acc = 6.8409, Low Acc = 10.9119
+[2024-10-22T04:06:51.382+0000] {logging_mixin.py:190} INFO - Epoch 77:
+[2024-10-22T04:06:51.384+0000] {logging_mixin.py:190} INFO - Loss high: 0.5568
+[2024-10-22T04:06:51.384+0000] {logging_mixin.py:190} INFO - Loss low: 0.4644
+[2024-10-22T04:06:51.384+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:51.385+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:51.385+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:51.602+0000] {logging_mixin.py:190} INFO - Epoch 77 - Validation: Loss = 0.0384, High Acc = 6.8593, Low Acc = 11.1437
+[2024-10-22T04:06:52.322+0000] {logging_mixin.py:190} INFO - Epoch 78:
+[2024-10-22T04:06:52.323+0000] {logging_mixin.py:190} INFO - Loss high: 0.4515
+[2024-10-22T04:06:52.324+0000] {logging_mixin.py:190} INFO - Loss low: 0.4967
+[2024-10-22T04:06:52.324+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:52.324+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:52.324+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:52.542+0000] {logging_mixin.py:190} INFO - Epoch 78 - Validation: Loss = 0.0387, High Acc = 6.8865, Low Acc = 11.1803
+[2024-10-22T04:06:53.261+0000] {logging_mixin.py:190} INFO - Epoch 79:
+[2024-10-22T04:06:53.262+0000] {logging_mixin.py:190} INFO - Loss high: 0.3628
+[2024-10-22T04:06:53.262+0000] {logging_mixin.py:190} INFO - Loss low: 0.4405
+[2024-10-22T04:06:53.263+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:53.263+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:53.264+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:53.485+0000] {logging_mixin.py:190} INFO - Epoch 79 - Validation: Loss = 0.0392, High Acc = 6.9283, Low Acc = 11.2337
+[2024-10-22T04:06:54.171+0000] {logging_mixin.py:190} INFO - Epoch 80:
+[2024-10-22T04:06:54.172+0000] {logging_mixin.py:190} INFO - Loss high: 0.3721
+[2024-10-22T04:06:54.172+0000] {logging_mixin.py:190} INFO - Loss low: 0.4624
+[2024-10-22T04:06:54.173+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:54.173+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:54.173+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:54.391+0000] {logging_mixin.py:190} INFO - Epoch 80 - Validation: Loss = 0.0396, High Acc = 6.9589, Low Acc = 11.2926
+[2024-10-22T04:06:55.109+0000] {logging_mixin.py:190} INFO - Epoch 81:
+[2024-10-22T04:06:55.111+0000] {logging_mixin.py:190} INFO - Loss high: 0.3377
+[2024-10-22T04:06:55.112+0000] {logging_mixin.py:190} INFO - Loss low: 0.4546
+[2024-10-22T04:06:55.113+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:55.114+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:55.115+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:55.334+0000] {logging_mixin.py:190} INFO - Epoch 81 - Validation: Loss = 0.0402, High Acc = 6.9838, Low Acc = 11.3978
+[2024-10-22T04:06:56.047+0000] {logging_mixin.py:190} INFO - Epoch 82:
+[2024-10-22T04:06:56.048+0000] {logging_mixin.py:190} INFO - Loss high: 0.4386
+[2024-10-22T04:06:56.049+0000] {logging_mixin.py:190} INFO - Loss low: 0.3585
+[2024-10-22T04:06:56.049+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:56.050+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:56.051+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:56.266+0000] {logging_mixin.py:190} INFO - Epoch 82 - Validation: Loss = 0.0408, High Acc = 7.0009, Low Acc = 11.5235
+[2024-10-22T04:06:56.991+0000] {logging_mixin.py:190} INFO - Epoch 83:
+[2024-10-22T04:06:56.992+0000] {logging_mixin.py:190} INFO - Loss high: 0.3859
+[2024-10-22T04:06:56.993+0000] {logging_mixin.py:190} INFO - Loss low: 0.4466
+[2024-10-22T04:06:56.993+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:56.994+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:56.994+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:57.205+0000] {logging_mixin.py:190} INFO - Epoch 83 - Validation: Loss = 0.0416, High Acc = 7.0175, Low Acc = 11.6819
+[2024-10-22T04:06:57.898+0000] {logging_mixin.py:190} INFO - Epoch 84:
+[2024-10-22T04:06:57.899+0000] {logging_mixin.py:190} INFO - Loss high: 0.4853
+[2024-10-22T04:06:57.900+0000] {logging_mixin.py:190} INFO - Loss low: 0.3739
+[2024-10-22T04:06:57.900+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:57.901+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:57.901+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:58.119+0000] {logging_mixin.py:190} INFO - Epoch 84 - Validation: Loss = 0.0421, High Acc = 7.0074, Low Acc = 11.7898
+[2024-10-22T04:06:59.267+0000] {logging_mixin.py:190} INFO - Epoch 85:
+[2024-10-22T04:06:59.268+0000] {logging_mixin.py:190} INFO - Loss high: 0.4750
+[2024-10-22T04:06:59.269+0000] {logging_mixin.py:190} INFO - Loss low: 0.4831
+[2024-10-22T04:06:59.270+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:06:59.271+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:06:59.271+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:06:59.485+0000] {logging_mixin.py:190} INFO - Epoch 85 - Validation: Loss = 0.0418, High Acc = 6.9656, Low Acc = 11.7726
+[2024-10-22T04:07:00.172+0000] {logging_mixin.py:190} INFO - Epoch 86:
+[2024-10-22T04:07:00.173+0000] {logging_mixin.py:190} INFO - Loss high: 0.3864
+[2024-10-22T04:07:00.174+0000] {logging_mixin.py:190} INFO - Loss low: 0.3562
+[2024-10-22T04:07:00.175+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:07:00.175+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:07:00.176+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:07:00.392+0000] {logging_mixin.py:190} INFO - Epoch 86 - Validation: Loss = 0.0408, High Acc = 6.9350, Low Acc = 11.5921
+[2024-10-22T04:07:01.082+0000] {logging_mixin.py:190} INFO - Epoch 87:
+[2024-10-22T04:07:01.083+0000] {logging_mixin.py:190} INFO - Loss high: 0.4133
+[2024-10-22T04:07:01.083+0000] {logging_mixin.py:190} INFO - Loss low: 0.3121
+[2024-10-22T04:07:01.083+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:07:01.083+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:07:01.084+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:07:01.298+0000] {logging_mixin.py:190} INFO - Epoch 87 - Validation: Loss = 0.0397, High Acc = 6.9073, Low Acc = 11.3784
+[2024-10-22T04:07:02.001+0000] {logging_mixin.py:190} INFO - Epoch 88:
+[2024-10-22T04:07:02.002+0000] {logging_mixin.py:190} INFO - Loss high: 0.4392
+[2024-10-22T04:07:02.003+0000] {logging_mixin.py:190} INFO - Loss low: 0.3218
+[2024-10-22T04:07:02.003+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:07:02.004+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:07:02.004+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:07:02.221+0000] {logging_mixin.py:190} INFO - Epoch 88 - Validation: Loss = 0.0389, High Acc = 6.8979, Low Acc = 11.2032
+[2024-10-22T04:07:02.953+0000] {logging_mixin.py:190} INFO - Epoch 89:
+[2024-10-22T04:07:02.955+0000] {logging_mixin.py:190} INFO - Loss high: 0.4439
+[2024-10-22T04:07:02.955+0000] {logging_mixin.py:190} INFO - Loss low: 0.3383
+[2024-10-22T04:07:02.956+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:07:02.956+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:07:02.956+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:07:03.170+0000] {logging_mixin.py:190} INFO - Epoch 89 - Validation: Loss = 0.0382, High Acc = 6.8924, Low Acc = 11.0599
+[2024-10-22T04:07:03.880+0000] {logging_mixin.py:190} INFO - Epoch 90:
+[2024-10-22T04:07:03.881+0000] {logging_mixin.py:190} INFO - Loss high: 0.4168
+[2024-10-22T04:07:03.882+0000] {logging_mixin.py:190} INFO - Loss low: 0.4095
+[2024-10-22T04:07:03.882+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:07:03.882+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:07:03.882+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:07:04.091+0000] {logging_mixin.py:190} INFO - Epoch 90 - Validation: Loss = 0.0374, High Acc = 6.8955, Low Acc = 10.8752
+[2024-10-22T04:07:04.843+0000] {logging_mixin.py:190} INFO - Epoch 91:
+[2024-10-22T04:07:04.844+0000] {logging_mixin.py:190} INFO - Loss high: 0.4863
+[2024-10-22T04:07:04.844+0000] {logging_mixin.py:190} INFO - Loss low: 0.4102
+[2024-10-22T04:07:04.844+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:07:04.844+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:07:04.844+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:07:05.052+0000] {logging_mixin.py:190} INFO - Epoch 91 - Validation: Loss = 0.0369, High Acc = 6.9050, Low Acc = 10.7268
+[2024-10-22T04:07:05.748+0000] {logging_mixin.py:190} INFO - Epoch 92:
+[2024-10-22T04:07:05.749+0000] {logging_mixin.py:190} INFO - Loss high: 0.4018
+[2024-10-22T04:07:05.750+0000] {logging_mixin.py:190} INFO - Loss low: 0.3537
+[2024-10-22T04:07:05.750+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:07:05.751+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:07:05.751+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:07:05.974+0000] {logging_mixin.py:190} INFO - Epoch 92 - Validation: Loss = 0.0366, High Acc = 6.9087, Low Acc = 10.6650
+[2024-10-22T04:07:06.727+0000] {logging_mixin.py:190} INFO - Epoch 93:
+[2024-10-22T04:07:06.729+0000] {logging_mixin.py:190} INFO - Loss high: 0.4365
+[2024-10-22T04:07:06.729+0000] {logging_mixin.py:190} INFO - Loss low: 0.3786
+[2024-10-22T04:07:06.730+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:07:06.731+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:07:06.732+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:07:06.952+0000] {logging_mixin.py:190} INFO - Epoch 93 - Validation: Loss = 0.0365, High Acc = 6.9217, Low Acc = 10.6229
+[2024-10-22T04:07:07.691+0000] {logging_mixin.py:190} INFO - Epoch 94:
+[2024-10-22T04:07:07.693+0000] {logging_mixin.py:190} INFO - Loss high: 0.3381
+[2024-10-22T04:07:07.693+0000] {logging_mixin.py:190} INFO - Loss low: 0.3813
+[2024-10-22T04:07:07.694+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:07:07.694+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:07:07.695+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:07:07.912+0000] {logging_mixin.py:190} INFO - Epoch 94 - Validation: Loss = 0.0363, High Acc = 6.9356, Low Acc = 10.5659
+[2024-10-22T04:07:08.631+0000] {logging_mixin.py:190} INFO - Epoch 95:
+[2024-10-22T04:07:08.633+0000] {logging_mixin.py:190} INFO - Loss high: 0.3640
+[2024-10-22T04:07:08.633+0000] {logging_mixin.py:190} INFO - Loss low: 0.3507
+[2024-10-22T04:07:08.634+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:07:08.634+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:07:08.634+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:07:08.855+0000] {logging_mixin.py:190} INFO - Epoch 95 - Validation: Loss = 0.0362, High Acc = 6.9445, Low Acc = 10.5164
+[2024-10-22T04:07:09.589+0000] {logging_mixin.py:190} INFO - Epoch 96:
+[2024-10-22T04:07:09.590+0000] {logging_mixin.py:190} INFO - Loss high: 0.4661
+[2024-10-22T04:07:09.591+0000] {logging_mixin.py:190} INFO - Loss low: 0.5056
+[2024-10-22T04:07:09.591+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:07:09.591+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:07:09.592+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:07:09.810+0000] {logging_mixin.py:190} INFO - Epoch 96 - Validation: Loss = 0.0360, High Acc = 6.9497, Low Acc = 10.4702
+[2024-10-22T04:07:10.537+0000] {logging_mixin.py:190} INFO - Epoch 97:
+[2024-10-22T04:07:10.538+0000] {logging_mixin.py:190} INFO - Loss high: 0.5262
+[2024-10-22T04:07:10.538+0000] {logging_mixin.py:190} INFO - Loss low: 0.3835
+[2024-10-22T04:07:10.539+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:07:10.539+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:07:10.540+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:07:10.758+0000] {logging_mixin.py:190} INFO - Epoch 97 - Validation: Loss = 0.0358, High Acc = 6.9537, Low Acc = 10.4072
+[2024-10-22T04:07:11.484+0000] {logging_mixin.py:190} INFO - Epoch 98:
+[2024-10-22T04:07:11.486+0000] {logging_mixin.py:190} INFO - Loss high: 0.4448
+[2024-10-22T04:07:11.486+0000] {logging_mixin.py:190} INFO - Loss low: 0.4213
+[2024-10-22T04:07:11.486+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:07:11.487+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:07:11.487+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:07:11.707+0000] {logging_mixin.py:190} INFO - Epoch 98 - Validation: Loss = 0.0356, High Acc = 6.9554, Low Acc = 10.3580
+[2024-10-22T04:07:12.426+0000] {logging_mixin.py:190} INFO - Epoch 99:
+[2024-10-22T04:07:12.428+0000] {logging_mixin.py:190} INFO - Loss high: 0.4374
+[2024-10-22T04:07:12.428+0000] {logging_mixin.py:190} INFO - Loss low: 0.3729
+[2024-10-22T04:07:12.429+0000] {logging_mixin.py:190} INFO - ACC high train: inf
+[2024-10-22T04:07:12.429+0000] {logging_mixin.py:190} INFO - ACC low train: inf
+[2024-10-22T04:07:12.429+0000] {logging_mixin.py:190} INFO - ------START EVAL------
+[2024-10-22T04:07:12.653+0000] {logging_mixin.py:190} INFO - Epoch 99 - Validation: Loss = 0.0356, High Acc = 6.9664, Low Acc = 10.3483
+[2024-10-22T04:07:12.673+0000] {python.py:240} INFO - Done. Returned value was: 0.02904842235147953
+[2024-10-22T04:07:12.702+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-22T04:07:12.703+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=auto_training_crawling_data_okx, task_id=training_model, run_id=manual__2024-10-22T04:05:11.643675+00:00, execution_date=20241022T040511, start_date=20241022T040532, end_date=20241022T040712
+[2024-10-22T04:07:12.818+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-22T04:07:12.836+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-22T04:07:12.836+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

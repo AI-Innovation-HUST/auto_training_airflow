@@ -1,0 +1,118 @@
+[2024-10-22T03:15:14.430+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-22T03:15:14.441+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: auto_training_crawling_data_okx.crawl_data_task manual__2024-10-22T03:15:07.683304+00:00 [queued]>
+[2024-10-22T03:15:14.448+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: auto_training_crawling_data_okx.crawl_data_task manual__2024-10-22T03:15:07.683304+00:00 [queued]>
+[2024-10-22T03:15:14.448+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-10-22T03:15:14.466+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): crawl_data_task> on 2024-10-22 03:15:07.683304+00:00
+[2024-10-22T03:15:14.477+0000] {standard_task_runner.py:72} INFO - Started process 376452 to run task
+[2024-10-22T03:15:14.486+0000] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'auto_training_crawling_data_okx', 'crawl_data_task', 'manual__2024-10-22T03:15:07.683304+00:00', '--job-id', '40', '--raw', '--subdir', 'DAGS_FOLDER/full_pipeline.py', '--cfg-path', '/tmp/tmp5ss4ikqd']
+[2024-10-22T03:15:14.489+0000] {standard_task_runner.py:105} INFO - Job 40: Subtask crawl_data_task
+[2024-10-22T03:15:14.545+0000] {task_command.py:467} INFO - Running <TaskInstance: auto_training_crawling_data_okx.crawl_data_task manual__2024-10-22T03:15:07.683304+00:00 [running]> on host ecs-gpu
+[2024-10-22T03:15:14.626+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='auto_training_crawling_data_okx' AIRFLOW_CTX_TASK_ID='crawl_data_task' AIRFLOW_CTX_EXECUTION_DATE='2024-10-22T03:15:07.683304+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-22T03:15:07.683304+00:00'
+[2024-10-22T03:15:14.627+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-22T03:15:14.913+0000] {_client.py:1038} INFO - HTTP Request: GET https://www.okx.com/api/v5/market/candles?instId=BTC-USDT&bar=4H&limit=300 "HTTP/2 200 OK"
+[2024-10-22T03:15:14.938+0000] {logging_mixin.py:190} INFO - Shape của DataFrame: (180, 9)
+[2024-10-22T03:15:14.939+0000] {logging_mixin.py:190} INFO - Thời gian bắt đầu: 2024-09-22 04:00:00
+[2024-10-22T03:15:14.939+0000] {logging_mixin.py:190} INFO - Thời gian kết thúc: 2024-10-22 00:00:00
+[2024-10-22T03:15:15.228+0000] {python.py:240} INFO - Done. Returned value was:                      ts        o        h  ...  others_dr  others_dlr  others_cr
+0   2024-10-22 00:00:00  67371.8  67688.0  ...   0.000000    0.000000   0.000000
+1   2024-10-21 20:00:00  67756.0  67922.0  ...  -0.244607   -0.244907  -0.244607
+2   2024-10-21 16:00:00  67331.5  67925.9  ...   0.570269    0.568649   0.324267
+3   2024-10-21 12:00:00  68241.4  68339.8  ...  -0.626366   -0.628336  -0.304130
+4   2024-10-21 08:00:00  68512.4  68664.9  ...   1.351373    1.342324   1.043133
+..                  ...      ...      ...  ...        ...         ...        ...
+175 2024-09-22 20:00:00  63164.1  64019.0  ...  -1.218949   -1.226440  -5.867459
+176 2024-09-22 16:00:00  62656.0  63229.8  ...  -0.645073   -0.647163  -6.474683
+177 2024-09-22 12:00:00  62779.4  62940.0  ...  -0.804254   -0.807506  -7.226864
+178 2024-09-22 08:00:00  62944.2  63035.0  ...   0.196629    0.196436  -7.044445
+179 2024-09-22 04:00:00  63114.9  63205.9  ...   0.262507    0.262163  -6.800431
+
+[180 rows x 95 columns]
+[2024-10-22T03:15:15.364+0000] {taskinstance.py:3310} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 789, in _execute_task
+    task_instance.xcom_push(key=XCOM_RETURN_KEY, value=xcom_value, session=session_or_null)
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 3638, in xcom_push
+    XCom.set(
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/api_internal/internal_api_call.py", line 139, in wrapper
+    return func(*args, **kwargs)
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/models/xcom.py", line 249, in set
+    value = cls.serialize_value(
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/models/xcom.py", line 688, in serialize_value
+    return json.dumps(value, cls=XComEncoder).encode("UTF-8")
+  File "/root/miniconda3/envs/project/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/utils/json.py", line 105, in encode
+    return super().encode(o)
+  File "/root/miniconda3/envs/project/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/root/miniconda3/envs/project/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/utils/json.py", line 92, in default
+    return serialize(o)
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/serialization/serde.py", line 149, in serialize
+    data, serialized_classname, version, is_serialized = _serializers[qn].serialize(o)
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/serialization/serializers/pandas.py", line 40, in serialize
+    import pyarrow as pa
+ModuleNotFoundError: No module named 'pyarrow'
+[2024-10-22T03:15:15.377+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=auto_training_crawling_data_okx, task_id=crawl_data_task, run_id=manual__2024-10-22T03:15:07.683304+00:00, execution_date=20241022T031507, start_date=20241022T031514, end_date=20241022T031515
+[2024-10-22T03:15:15.398+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-22T03:15:15.398+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 40 for task crawl_data_task (No module named 'pyarrow'; 376452)
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 3004, in _run_raw_task
+    return _run_raw_task(
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 3158, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 3182, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 789, in _execute_task
+    task_instance.xcom_push(key=XCOM_RETURN_KEY, value=xcom_value, session=session_or_null)
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 3638, in xcom_push
+    XCom.set(
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/api_internal/internal_api_call.py", line 139, in wrapper
+    return func(*args, **kwargs)
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/models/xcom.py", line 249, in set
+    value = cls.serialize_value(
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/models/xcom.py", line 688, in serialize_value
+    return json.dumps(value, cls=XComEncoder).encode("UTF-8")
+  File "/root/miniconda3/envs/project/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/utils/json.py", line 105, in encode
+    return super().encode(o)
+  File "/root/miniconda3/envs/project/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/root/miniconda3/envs/project/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/utils/json.py", line 92, in default
+    return serialize(o)
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/serialization/serde.py", line 149, in serialize
+    data, serialized_classname, version, is_serialized = _serializers[qn].serialize(o)
+  File "/root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/serialization/serializers/pandas.py", line 40, in serialize
+    import pyarrow as pa
+ModuleNotFoundError: No module named 'pyarrow'
+[2024-10-22T03:15:15.419+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-10-22T03:15:15.449+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-22T03:15:15.449+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

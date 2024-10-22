@@ -1,0 +1,386 @@
+[2024-10-08T07:57:57.923+0000] {processor.py:186} INFO - Started process (PID=207218) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T07:57:57.925+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T07:57:57.928+0000] {logging_mixin.py:190} INFO - [2024-10-08T07:57:57.928+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T07:57:57.948+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T07:57:58.111+0000] {logging_mixin.py:190} INFO - [2024-10-08T07:57:58.110+0000] {override.py:1901} INFO - Created Permission View: can delete on DAG:example_complex
+[2024-10-08T07:57:58.130+0000] {logging_mixin.py:190} INFO - [2024-10-08T07:57:58.129+0000] {override.py:1901} INFO - Created Permission View: can read on DAG:example_complex
+[2024-10-08T07:57:58.145+0000] {logging_mixin.py:190} INFO - [2024-10-08T07:57:58.144+0000] {override.py:1901} INFO - Created Permission View: can edit on DAG:example_complex
+[2024-10-08T07:57:58.169+0000] {logging_mixin.py:190} INFO - [2024-10-08T07:57:58.168+0000] {override.py:1901} INFO - Created Permission View: can delete on DAG Run:example_complex
+[2024-10-08T07:57:58.185+0000] {logging_mixin.py:190} INFO - [2024-10-08T07:57:58.184+0000] {override.py:1901} INFO - Created Permission View: menu access on DAG Run:example_complex
+[2024-10-08T07:57:58.201+0000] {logging_mixin.py:190} INFO - [2024-10-08T07:57:58.201+0000] {override.py:1901} INFO - Created Permission View: can create on DAG Run:example_complex
+[2024-10-08T07:57:58.216+0000] {logging_mixin.py:190} INFO - [2024-10-08T07:57:58.215+0000] {override.py:1901} INFO - Created Permission View: can read on DAG Run:example_complex
+[2024-10-08T07:57:58.216+0000] {logging_mixin.py:190} INFO - [2024-10-08T07:57:58.216+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T07:57:58.234+0000] {logging_mixin.py:190} INFO - [2024-10-08T07:57:58.234+0000] {dag.py:3262} INFO - Creating ORM DAG for example_complex
+[2024-10-08T07:57:58.235+0000] {logging_mixin.py:190} INFO - [2024-10-08T07:57:58.235+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T07:57:58.266+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.354 seconds
+[2024-10-08T07:59:17.289+0000] {processor.py:186} INFO - Started process (PID=207487) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T07:59:17.292+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T07:59:17.295+0000] {logging_mixin.py:190} INFO - [2024-10-08T07:59:17.295+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T07:59:17.315+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T07:59:17.356+0000] {logging_mixin.py:190} INFO - [2024-10-08T07:59:17.356+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T07:59:17.374+0000] {logging_mixin.py:190} INFO - [2024-10-08T07:59:17.374+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T07:59:17.405+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.126 seconds
+[2024-10-08T08:00:27.962+0000] {processor.py:186} INFO - Started process (PID=207695) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:00:27.966+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:00:27.969+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:00:27.969+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:00:27.990+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:00:28.034+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:00:28.033+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:00:28.052+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:00:28.051+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:00:28.084+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.134 seconds
+[2024-10-08T08:01:43.916+0000] {processor.py:186} INFO - Started process (PID=208047) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:01:43.919+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:01:43.922+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:01:43.921+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:01:43.942+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:01:43.982+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:01:43.982+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:01:44.000+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:01:44.000+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:01:44.031+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.126 seconds
+[2024-10-08T08:02:53.703+0000] {processor.py:186} INFO - Started process (PID=208296) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:02:53.705+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:02:53.709+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:02:53.708+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:02:53.729+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:02:53.773+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:02:53.773+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:02:53.791+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:02:53.791+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:02:53.830+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.139 seconds
+[2024-10-08T08:04:02.666+0000] {processor.py:186} INFO - Started process (PID=208547) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:04:02.668+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:04:02.672+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:04:02.671+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:04:02.690+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:04:02.735+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:04:02.734+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:04:02.761+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:04:02.761+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:04:02.808+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.153 seconds
+[2024-10-08T08:05:09.552+0000] {processor.py:186} INFO - Started process (PID=208749) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:05:09.555+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:05:09.558+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:05:09.557+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:05:09.578+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:05:09.621+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:05:09.621+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:05:09.641+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:05:09.640+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:05:09.675+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.134 seconds
+[2024-10-08T08:06:11.702+0000] {processor.py:186} INFO - Started process (PID=208935) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:06:11.704+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:06:11.708+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:06:11.707+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:06:11.727+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:06:11.770+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:06:11.770+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:06:11.789+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:06:11.789+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:06:11.820+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.130 seconds
+[2024-10-08T08:07:16.872+0000] {processor.py:186} INFO - Started process (PID=209164) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:07:16.874+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:07:16.878+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:07:16.877+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:07:16.897+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:07:16.939+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:07:16.938+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:07:16.956+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:07:16.956+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:07:16.992+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.132 seconds
+[2024-10-08T08:08:26.882+0000] {processor.py:186} INFO - Started process (PID=209546) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:08:26.885+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:08:26.888+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:08:26.887+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:08:26.908+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:08:26.950+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:08:26.949+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:08:26.968+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:08:26.968+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:08:27.006+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.134 seconds
+[2024-10-08T08:13:26.849+0000] {processor.py:186} INFO - Started process (PID=211129) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:13:26.851+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:13:26.855+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:13:26.854+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:13:26.875+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:13:26.923+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:13:26.923+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:13:26.942+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:13:26.941+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:13:26.985+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.148 seconds
+[2024-10-08T08:14:36.265+0000] {processor.py:186} INFO - Started process (PID=211431) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:14:36.268+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:14:36.272+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:14:36.271+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:14:36.292+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:14:36.334+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:14:36.334+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:14:36.355+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:14:36.355+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:14:36.394+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.144 seconds
+[2024-10-08T08:15:45.260+0000] {processor.py:186} INFO - Started process (PID=211630) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:15:45.263+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:15:45.266+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:15:45.266+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:15:45.286+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:15:45.328+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:15:45.327+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:15:45.346+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:15:45.345+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:15:45.377+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.129 seconds
+[2024-10-08T08:16:53.578+0000] {processor.py:186} INFO - Started process (PID=211836) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:16:53.581+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:16:53.584+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:16:53.584+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:16:53.604+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:16:53.646+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:16:53.645+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:16:53.664+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:16:53.663+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:16:53.697+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.131 seconds
+[2024-10-08T08:18:03.189+0000] {processor.py:186} INFO - Started process (PID=212085) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:18:03.192+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:18:03.195+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:18:03.194+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:18:03.215+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:18:03.264+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:18:03.264+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:18:03.283+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:18:03.283+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:18:03.315+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.137 seconds
+[2024-10-08T08:19:15.727+0000] {processor.py:186} INFO - Started process (PID=212291) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:19:15.729+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:19:15.733+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:19:15.732+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:19:15.753+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:19:15.794+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:19:15.793+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:19:15.811+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:19:15.811+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:19:15.849+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.132 seconds
+[2024-10-08T08:20:19.769+0000] {processor.py:186} INFO - Started process (PID=212473) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:20:19.772+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:20:19.776+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:20:19.775+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:20:19.795+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:20:19.837+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:20:19.837+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:20:19.855+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:20:19.855+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:20:19.887+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.130 seconds
+[2024-10-08T08:21:36.045+0000] {processor.py:186} INFO - Started process (PID=212737) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:21:36.048+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:21:36.051+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:21:36.050+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:21:36.070+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:21:36.110+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:21:36.110+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:21:36.128+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:21:36.127+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:21:36.161+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.127 seconds
+[2024-10-08T08:22:44.992+0000] {processor.py:186} INFO - Started process (PID=212984) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:22:44.995+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:22:44.998+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:22:44.998+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:22:45.018+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:22:45.060+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:22:45.060+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:22:45.079+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:22:45.079+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:22:45.115+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.134 seconds
+[2024-10-08T08:23:48.775+0000] {processor.py:186} INFO - Started process (PID=213170) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:23:48.778+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:23:48.781+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:23:48.781+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:23:48.801+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:23:48.850+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:23:48.849+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:23:48.870+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:23:48.870+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:23:48.902+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.137 seconds
+[2024-10-08T08:37:40.000+0000] {processor.py:186} INFO - Started process (PID=215129) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:37:40.003+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:37:40.006+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:37:40.006+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:37:40.027+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:37:40.069+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:37:40.068+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:37:40.087+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:37:40.086+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:37:40.119+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.129 seconds
+[2024-10-08T08:38:49.707+0000] {processor.py:186} INFO - Started process (PID=215535) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:38:49.709+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:38:49.713+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:38:49.712+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:38:49.732+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:38:49.774+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:38:49.773+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:38:49.791+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:38:49.791+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:38:49.823+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.127 seconds
+[2024-10-08T08:40:02.657+0000] {processor.py:186} INFO - Started process (PID=215763) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:40:02.662+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:40:02.666+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:40:02.665+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:40:02.685+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:40:02.728+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:40:02.727+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:40:02.746+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:40:02.745+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:40:02.779+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.135 seconds
+[2024-10-08T08:41:10.749+0000] {processor.py:186} INFO - Started process (PID=216216) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:41:10.751+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:41:10.754+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:41:10.754+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:41:10.774+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:41:10.815+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:41:10.815+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:41:10.833+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:41:10.832+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:41:10.867+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.130 seconds
+[2024-10-08T08:42:17.753+0000] {processor.py:186} INFO - Started process (PID=216568) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:42:17.754+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:42:17.758+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:42:17.757+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:42:17.777+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:42:17.819+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:42:17.819+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:42:17.837+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:42:17.836+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:42:17.871+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.131 seconds
+[2024-10-08T08:43:24.569+0000] {processor.py:186} INFO - Started process (PID=216786) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:43:24.572+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:43:24.575+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:43:24.575+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:43:24.595+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:43:24.636+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:43:24.636+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:43:24.654+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:43:24.653+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:43:24.687+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.129 seconds
+[2024-10-08T08:44:34.773+0000] {processor.py:186} INFO - Started process (PID=217007) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:44:34.776+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:44:34.779+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:44:34.779+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:44:34.801+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:44:34.844+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:44:34.843+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:44:34.863+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:44:34.863+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:44:34.899+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.138 seconds
+[2024-10-08T08:45:49.230+0000] {processor.py:186} INFO - Started process (PID=217299) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:45:49.234+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:45:49.237+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:45:49.236+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:45:49.256+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:45:49.298+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:45:49.298+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:45:49.316+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:45:49.316+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:45:49.348+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.129 seconds
+[2024-10-08T08:47:00.070+0000] {processor.py:186} INFO - Started process (PID=217638) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:47:00.073+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:47:00.077+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:47:00.076+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:47:00.098+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:47:00.140+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:47:00.140+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:47:00.158+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:47:00.158+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:47:00.188+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.129 seconds
+[2024-10-08T08:48:13.025+0000] {processor.py:186} INFO - Started process (PID=217948) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:48:13.028+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:48:13.032+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:48:13.031+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:48:13.051+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:48:13.092+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:48:13.092+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:48:13.110+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:48:13.110+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:48:13.144+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.130 seconds
+[2024-10-08T08:49:23.778+0000] {processor.py:186} INFO - Started process (PID=218171) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:49:23.781+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:49:23.785+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:49:23.784+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:49:23.805+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:49:23.847+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:49:23.846+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:49:23.866+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:49:23.865+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:49:23.902+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.135 seconds
+[2024-10-08T08:50:34.426+0000] {processor.py:186} INFO - Started process (PID=218398) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:50:34.429+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T08:50:34.432+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:50:34.432+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:50:34.452+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T08:50:34.494+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:50:34.494+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T08:50:34.512+0000] {logging_mixin.py:190} INFO - [2024-10-08T08:50:34.512+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T08:50:34.543+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.128 seconds
+[2024-10-08T09:05:44.285+0000] {processor.py:186} INFO - Started process (PID=220088) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:05:44.288+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T09:05:44.293+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:05:44.292+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:05:44.315+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:05:44.363+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:05:44.362+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T09:05:44.382+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:05:44.381+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T09:05:44.416+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.143 seconds
+[2024-10-08T09:09:17.664+0000] {processor.py:186} INFO - Started process (PID=220916) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:09:17.668+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T09:09:17.671+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:09:17.670+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:09:17.691+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:09:17.732+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:09:17.732+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T09:09:17.750+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:09:17.750+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T09:09:17.781+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.128 seconds
+[2024-10-08T09:10:47.055+0000] {processor.py:186} INFO - Started process (PID=221636) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:10:47.058+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T09:10:47.061+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:10:47.061+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:10:47.082+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:10:47.123+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:10:47.123+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T09:10:47.141+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:10:47.141+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T09:10:47.175+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.129 seconds
+[2024-10-08T09:11:55.728+0000] {processor.py:186} INFO - Started process (PID=221921) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:11:55.732+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T09:11:55.735+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:11:55.735+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:11:55.756+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:11:55.823+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:11:55.823+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T09:11:55.841+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:11:55.841+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T09:11:55.876+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.161 seconds
+[2024-10-08T09:13:00.183+0000] {processor.py:186} INFO - Started process (PID=222190) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:13:00.186+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T09:13:00.190+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:13:00.189+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:13:00.210+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:13:00.253+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:13:00.253+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T09:13:00.273+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:13:00.272+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T09:13:00.304+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.133 seconds
+[2024-10-08T09:14:08.066+0000] {processor.py:186} INFO - Started process (PID=222536) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:14:08.069+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T09:14:08.072+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:14:08.072+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:14:08.092+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:14:08.133+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:14:08.133+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T09:14:08.150+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:14:08.150+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T09:14:08.182+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.128 seconds
+[2024-10-08T09:15:13.088+0000] {processor.py:186} INFO - Started process (PID=222802) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:15:13.091+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T09:15:13.094+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:15:13.094+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:15:13.114+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:15:13.155+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:15:13.154+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T09:15:13.173+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:15:13.173+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T09:15:13.205+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.128 seconds
+[2024-10-08T09:16:27.670+0000] {processor.py:186} INFO - Started process (PID=223037) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:16:27.673+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T09:16:27.677+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:16:27.676+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:16:27.698+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:16:27.742+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:16:27.742+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T09:16:27.760+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:16:27.760+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T09:16:27.793+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.134 seconds
+[2024-10-08T09:17:37.035+0000] {processor.py:186} INFO - Started process (PID=223269) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:17:37.038+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T09:17:37.041+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:17:37.041+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:17:37.061+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:17:37.103+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:17:37.102+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T09:17:37.121+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:17:37.121+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T09:17:37.154+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.130 seconds
+[2024-10-08T09:18:48.283+0000] {processor.py:186} INFO - Started process (PID=223556) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:18:48.287+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T09:18:48.290+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:18:48.290+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:18:48.310+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:18:48.352+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:18:48.352+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T09:18:48.371+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:18:48.370+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T09:18:48.404+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.131 seconds
+[2024-10-08T09:20:01.785+0000] {processor.py:186} INFO - Started process (PID=223852) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:20:01.789+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T09:20:01.792+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:20:01.791+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:20:01.812+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:20:01.853+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:20:01.852+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T09:20:01.871+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:20:01.870+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T09:20:01.907+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.132 seconds
+[2024-10-08T09:21:13.294+0000] {processor.py:186} INFO - Started process (PID=224082) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:21:13.297+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T09:21:13.301+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:21:13.300+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:21:13.321+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:21:13.364+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:21:13.364+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T09:21:13.383+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:21:13.382+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T09:21:13.416+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.134 seconds
+[2024-10-08T09:22:23.277+0000] {processor.py:186} INFO - Started process (PID=224309) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:22:23.280+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T09:22:23.283+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:22:23.283+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:22:23.303+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:22:23.345+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:22:23.344+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T09:22:23.363+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:22:23.362+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T09:22:23.401+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.135 seconds
+[2024-10-08T09:23:32.698+0000] {processor.py:186} INFO - Started process (PID=224504) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:23:32.700+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T09:23:32.704+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:23:32.703+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:23:32.724+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:23:32.765+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:23:32.765+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T09:23:32.784+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:23:32.784+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T09:23:32.817+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.130 seconds
+[2024-10-08T09:24:43.204+0000] {processor.py:186} INFO - Started process (PID=224960) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:24:43.207+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T09:24:43.210+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:24:43.210+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:24:43.229+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:24:43.270+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:24:43.270+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T09:24:43.288+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:24:43.288+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T09:24:43.321+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.128 seconds
+[2024-10-08T09:25:51.655+0000] {processor.py:186} INFO - Started process (PID=225576) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:25:51.659+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T09:25:51.664+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:25:51.664+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:25:51.686+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:25:51.728+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:25:51.728+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T09:25:51.748+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:25:51.748+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T09:25:51.788+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.144 seconds
+[2024-10-08T09:27:04.798+0000] {processor.py:186} INFO - Started process (PID=225994) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:27:04.802+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T09:27:04.806+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:27:04.805+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:27:04.826+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:27:04.868+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:27:04.868+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T09:27:04.887+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:27:04.887+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T09:27:04.921+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.135 seconds
+[2024-10-08T09:28:16.258+0000] {processor.py:186} INFO - Started process (PID=226486) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:28:16.261+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T09:28:16.264+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:28:16.264+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:28:16.285+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:28:16.328+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:28:16.328+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T09:28:16.347+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:28:16.347+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T09:28:16.380+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.136 seconds
+[2024-10-08T09:29:32.559+0000] {processor.py:186} INFO - Started process (PID=227046) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:29:32.562+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T09:29:32.565+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:29:32.564+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:29:32.583+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:29:32.724+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:29:32.723+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T09:29:32.737+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:29:32.737+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T09:29:32.767+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.223 seconds
+[2024-10-08T09:30:57.035+0000] {processor.py:186} INFO - Started process (PID=228000) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:30:57.038+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T09:30:57.041+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:30:57.040+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:30:57.061+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:30:57.212+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:30:57.212+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T09:30:57.226+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:30:57.226+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T09:30:57.254+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.230 seconds
+[2024-10-08T09:32:25.365+0000] {processor.py:186} INFO - Started process (PID=229051) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:32:25.368+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T09:32:25.372+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:32:25.371+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:32:25.394+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:32:25.438+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:32:25.438+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T09:32:25.457+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:32:25.457+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T09:32:25.491+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.137 seconds
+[2024-10-08T09:33:37.862+0000] {processor.py:186} INFO - Started process (PID=229479) to work on /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:33:37.865+0000] {processor.py:914} INFO - Processing file /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2024-10-08T09:33:37.868+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:33:37.867+0000] {dagbag.py:588} INFO - Filling up the DagBag from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:33:37.887+0000] {processor.py:925} INFO - DAG(s) 'example_complex' retrieved from /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py
+[2024-10-08T09:33:37.926+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:33:37.926+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-08T09:33:37.947+0000] {logging_mixin.py:190} INFO - [2024-10-08T09:33:37.947+0000] {dag.py:4180} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2024-10-08T09:33:37.979+0000] {processor.py:208} INFO - Processing /root/miniconda3/envs/project/lib/python3.8/site-packages/airflow/example_dags/example_complex.py took 0.129 seconds
