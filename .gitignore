@@ -43,3 +43,5 @@ pylint-report.txt
 
 # VSCode settings
 .v
+.vscode/settings.json
+.vscode/
