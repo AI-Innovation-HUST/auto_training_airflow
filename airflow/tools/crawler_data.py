@@ -158,13 +158,13 @@ if __name__ == "__main__":
     fetcher = OKXDataFetcher()
     
     
-    # 1. Lấy 7 ngày gần nhất
-    df1 = fetcher.fetch_by_days("BTC-USDT", "1H", days=7)
-    fetcher.save_to_csv(df1, "crawler_data/btc_7days.csv")
+    # # 1. Lấy 7 ngày gần nhất
+    # df1 = fetcher.fetch_by_days("BTC-USDT", "1H", days=7)
+    # fetcher.save_to_csv(df1, "crawler_data/btc_7days.csv")
 
-    # 2. Lấy 1000 nến gần nhất
-    df2 = fetcher.fetch_by_bars("BTC-USDT", "15m", total_candles=1000)
-    fetcher.save_to_csv(df2, "crawler_data/btc_1000candles.csv")
+    # # 2. Lấy 1000 nến gần nhất
+    # df2 = fetcher.fetch_by_bars("BTC-USDT", "15m", total_candles=1000)
+    # fetcher.save_to_csv(df2, "crawler_data/btc_1000candles.csv")
 
     # 3. Lấy dữ liệu từ ngày A đến ngày B
     df3 = fetcher.fetch_by_range(

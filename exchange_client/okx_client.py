@@ -55,10 +55,7 @@ class OKXClient:
             ordType="market",      
             sz=size,               
             posSide=posSide ,        
-            tpTriggerPx=tpTriggerPx,
-            tpOrdPx="-1",
-            slTriggerPx=slTriggerPx,
-            slOrdPx="-1",
+            
             )         
 
             return order
