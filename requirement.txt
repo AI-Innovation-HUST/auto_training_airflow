@@ -8,4 +8,4 @@ tqdm
 scikit-learn
 okx
 apache-airflow
-pip install python-okx
+python-okx
